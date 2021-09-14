@@ -1,0 +1,23 @@
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+body {
+    font-family: 'Copse', Serif;
+    text-align: center;
+    background-color: black;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border: solid 5px yellow;
+}
+
+#pics {
+    width: 900px;
+    height: 900px;
+    border: solid 1px black;
+    margin: auto;
+}
