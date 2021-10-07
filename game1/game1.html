@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Memory Game </title>
+    <link rel="stylesheet" href="game1.css">
+</head>
+<body background="gameimages/blackgradient.jpg">
+
+<section id="visuals">
+    <div class="initiaal1"> PLAYER 1 </div>
+    <div class="initiaal2"> PLAYER 2 </div>
+    <div id="player1name"> P1 </div>
+    <div id="player2name"> P2 </div>
+
+    <div id="puntencombo">
+        <div class="punten1"> <div id="score1"> POINTS: </div> <div id="player1points"> 0 </div> </div>
+        <div class="punten2"> <div id="score2"> POINTS: </div> <div id="player2points"> 0 </div> </div>
+    </div>
+    <div class="debeurt" id="aanbeurt"> PLayer 1 Start </div>
+</section>
+
+<section class="memory-game" id="cardvisibility">
+    <div class="card" data-framework="auto1">
+        <img class="img voorkant" src="gameimages/auto1.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto1">
+        <img class="img voorkant" src="gameimages/auto1.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto2">
+        <img class="img voorkant" src="gameimages/auto2.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto2">
+        <img class="img voorkant" src="gameimages/auto2.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto3">
+        <img class="img voorkant" src="gameimages/auto3.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto3">
+        <img class="img voorkant" src="gameimages/auto3.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto4">
+        <img class="img voorkant" src="gameimages/auto4.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto4">
+        <img class="img voorkant" src="gameimages/auto4.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto5">
+        <img class="img voorkant" src="gameimages/auto5.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto5">
+        <img class="img voorkant" src="gameimages/auto5.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto6">
+        <img class="img voorkant" src="gameimages/auto6.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto6">
+        <img class="img voorkant" src="gameimages/auto6.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto7">
+        <img class="img voorkant" src="gameimages/auto7.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto7">
+        <img class="img voorkant" src="gameimages/auto7.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto8">
+        <img class="img voorkant" src="gameimages/auto8.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto8">
+        <img class="img voorkant" src="gameimages/auto8.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto9">
+        <img class="img voorkant" src="gameimages/auto9.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto9">
+        <img class="img voorkant" src="gameimages/auto9.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto10">
+        <img class="img voorkant" src="gameimages/auto10.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto10">
+        <img class="img voorkant" src="gameimages/auto10.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto11">
+        <img class="img voorkant" src="gameimages/auto11.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto11">
+        <img class="img voorkant" src="gameimages/auto11.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto12">
+        <img class="img voorkant" src="gameimages/auto12.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+    <div class="card" data-framework="auto12">
+        <img class="img voorkant" src="gameimages/auto12.jpg"/>
+        <img class="img achterkant" src="gameimages/joker.jpg"/>
+    </div>
+</section>
+<div class="winner" id="thewinner"></div>
+
+<script src="game1.js"></script>
+</body>
+</html>

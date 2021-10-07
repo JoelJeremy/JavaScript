@@ -1,5 +1,3 @@
-
-
 /*-- pagina titel --*/
 document.getElementById("paginatitel").innerText = "Dit is de pagina titel";
 /*-- Subkop --*/

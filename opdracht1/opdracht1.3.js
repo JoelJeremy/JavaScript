@@ -6,3 +6,4 @@ var mijnauto ={
 }
 
 console.log(mijnauto.kleur);
+

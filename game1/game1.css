@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-attachment: fixed;
+    display: flex;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*dit is de body van het spel*/
+.memory-game {
+    width: 900px;
+    height: 460px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+/*dit zijn de afmetingen voor de memory kaarten*/
+.card {
+    width: calc(12.5% - 10px);
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+/* laat de kaart 180 graden draaien*/
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/*bewerking van de voorkant, en achterkant van de kaart*/
+.voorkant, .achterkant {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    position: absolute;
+    border-radius: 10px;
+    background: purple;
+}
+
+.voorkant {
+    transform: rotateY(180deg);
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* player1/player 2 indicaties*/
+.initiaal1 {
+    margin-top: 20px;
+    left: 175px;
+    position: absolute;
+    color: gold;
+}
+
+.initiaal2 {
+    margin-top: 20px;
+    right: 175px;
+    position: absolute;
+    color: gold;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* laat de namen vanm de spelers zien in een vakje */
+#player1name {
+    /*--sizing--*/
+    margin-top: 50px;
+    padding: 20px;
+    width: 134px;
+    top: 10px;
+    left: 150px;
+    /*--edits--*/
+    position: absolute;
+    display: flex;
+    /*--colors--*/
+    background: black;
+    color: gold;
+    border: 1px solid purple;
+}
+
+#player2name {
+    /*--sizin--*/
+    margin-top: 50px;
+    padding: 20px;
+    width: 134px;
+    top: 10px;
+    right: 150px;
+    /*--edits--*/
+    position: absolute;
+    display: flex;
+    /*--colors--*/
+    background: black;
+    color: gold;
+    border: 1px solid purple;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* bewerkt punten1 en punten2 */
+#puntencombo {
+    top: 140px;
+    width: 90%;
+    left: 80px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+/* induviduele bewerkingen */
+.punten1 {
+     /*--sizing--*/
+    margin-left: 70px;
+    padding: 20px;
+    /*--edits--*/
+    display: flex;
+    /*--colors--*/
+    color: gold;
+    background: black;
+    border: 1px solid purple;
+ }
+
+.punten2 {
+    /*--sizing--*/
+    margin-right: 75px;
+    padding: 20px;
+    /*--edits--*/
+    display: flex;
+    /*--colors--*/
+    color: gold;
+    background: black;
+    border: 1px solid purple;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/* winnaar melding */
+.winner {
+    /*--sizing--*/
+    margin-top: 25px;
+    left: 43%;
+    padding: 30px;
+    /*--edits--*/
+    position: absolute;
+    visibility: hidden;
+    /*-- colors--*/
+    border: 1px solid greenyellow;
+    background: black;
+    color: gold;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* beurt vakje */
+.debeurt {
+    /*--sizing--*/
+    margin-top: 125px;
+    left: 43%;
+    font-size: 20px;
+    padding: 10px;
+    /*--edits--*/
+    position: absolute;
+    font-weight: bold;
+    /*-- colors--*/
+    border: 1px solid purple;
+    background: black;
+    color: gold;
+}
+/*--------------------------------------------------------------------------------------------------------*/
